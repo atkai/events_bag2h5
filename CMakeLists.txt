@@ -8,7 +8,8 @@ find_package(HDF5 COMPONENTS CXX REQUIRED)
 find_package(rosbag REQUIRED std_msgs REQUIRED)
 
 # modify this path to your ROS installation for dvs_mgs
-set(ROS_INCLUDE_DIR /home/suman/catkin_ws/devel/include)
+# set(ROS_INCLUDE_DIR /home/suman/catkin_ws/devel/include)
+set(ROS_INCLUDE_DIR /media/zju/dataset2/Dataset_tools/dvs_ros/devel/include)
 
 include_directories(
         ${rosbag_INCLUDE_DIRS}
@@ -24,3 +25,9 @@ target_link_libraries(events_h52bag
     ${std_msgs_LIBRARIES}
 )
 
+add_executable(events_bag2h5 src/events_bag2h5.cpp)
+target_link_libraries(events_bag2h5
+    ${HDF5_CXX_LIBRARIES}
+    ${rosbag_LIBRARIES}
+    ${std_msgs_LIBRARIES}
+)

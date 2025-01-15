@@ -22,7 +22,7 @@ make
 
 
 # Working example
-* Download input data from DSEC dataset: https://rpg.ifi.uzh.ch/datasets/davis/boxes_6dof.bag
+* Download input data from DAVIS240C dataset: https://rpg.ifi.uzh.ch/datasets/davis/boxes_6dof.bag
 * Execute: `./events_bag2h5 boxes_6dof.bag out /dvs/events`
 * The output ROSBag `out.h5` is generated.
 

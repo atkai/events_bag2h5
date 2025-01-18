@@ -1,5 +1,5 @@
 # events_bag2h5
-We add implementations to covert from ROSbags to HDF5, and keep the original C++ code to convert event data from HDF5 to ROSbags. More information about Installation and details about h52bag can be found in this repo 'https://github.com/tub-rip/events_h52bag'.
+We add implementations to covert from ROSbags to HDF5. And we also keep the original C++ code to convert event data from HDF5 to ROSbags. More information about Installation and details about h52bag can be found in this repo 'https://github.com/tub-rip/events_h52bag'.
 
 
 # Installation
@@ -17,7 +17,7 @@ make
 
 # Execution
 ## ROSBag to HDF5
-`./events_h52bag <path/to/input/bagfile> <path/to/output/h5file(without extension)> <event_topic_name> [optional, default="events"]<dataset_prefix>`
+`./events_bag2h5 <path/to/input/bagfile> <path/to/output/h5file(without extension)> <event_topic_name> [optional, default="events"]<dataset_prefix>`
 
 
 
@@ -28,4 +28,4 @@ make
 
 
 # Acknowledgment
-We thank [Suman Ghosh](https://www.linkedin.com/in/suman-ghosh-a8762576/) from [tub-rip](https://github.com/tub-rip), and their tool [events_h52bag](https://github.com/tub-rip/events_h52bag) for converting event data from HDF5 to ROSbags.
+We thank [Suman Ghosh](https://www.linkedin.com/in/suman-ghosh-a8762576/) from [tub-rip](https://github.com/tub-rip) and their tool, [events_h52bag](https://github.com/tub-rip/events_h52bag), for converting event data from HDF5 to ROSbags.
